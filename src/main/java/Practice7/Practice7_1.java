@@ -15,7 +15,7 @@ public class Practice7_1 {
         System.out.println("何回で当てられるか挑戦してください");
 
         /* 当たるまでループを繰り返す */
-        while (hitNumber <= 100) {
+        while (true) {
             /* 数の入力 */
             System.out.print("数:>");
             number = Integer.parseInt(br.readLine());
