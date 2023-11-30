@@ -1,0 +1,32 @@
+次のswitch文のうち、正しく動作するものを選びなさい。
+
+①
+switch (strDivision) {          //String型変数
+case "午前":
+    System.out.println("おはようございます");
+    break;
+-------------------------------------------------------
+②
+switch (strEvalu) {          //String型変数
+case 'A':
+    System.out.println("優");
+    break;
+-------------------------------------------------------
+③
+switch (charEvalu) {          //char型変数
+case 'A':
+    System.out.println("優");
+    break;
+-------------------------------------------------------
+④
+switch (intScore) {          //int型変数
+case intScore >= 80:
+    System.out.println("優");
+    break;
+-------------------------------------------------------
+②は文字列を扱うstring型に対し、シングルコーテーション(')で囲った文字を使用しているため、エラーとなる。
+String型ならダブルコーテーション(")で囲む。
+
+④はcaseの値は定数でなくてはならず、式（boolean型の扱い？）の記述はコンパイルエラーとなる。
+
+よって答えは　①と③
